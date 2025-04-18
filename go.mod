@@ -7,7 +7,7 @@ require (
 	fortio.org/log v1.17.2
 	fortio.org/progressbar v0.12.0
 	fortio.org/scli v1.16.1
-	fortio.org/terminal v0.30.1-0.20250417225901-79a2a3679507
+	fortio.org/terminal v0.31.0
 )
 
 require (
