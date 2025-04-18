@@ -92,7 +92,6 @@ func lifeHandler(w http.ResponseWriter, r *http.Request) {
 			// fmt.Fprintln(ww, i)
 			log.LogVf("Iteration %d", i)
 			game.Next()
-			pbar.Progress(float64(100*i) / float64(maxIter))
 		}
 	}
 	_, _ = w.Write([]byte("\r\n\n"))
