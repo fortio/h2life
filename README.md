@@ -13,7 +13,7 @@ Demo/deployed under/try it:
 ```bash
 curl --compressed https://demo.fortio.org/life
 ```
-Compressed save my bandwidth (gzip).
+Using the --compressed option saves bandwidth by enabling gzip compression.
 
 or
 ```bash
