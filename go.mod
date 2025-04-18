@@ -3,7 +3,7 @@ module github.com/fortio/h2life
 go 1.23.8
 
 require (
-	fortio.org/fortio v1.69.2
+	fortio.org/fortio v1.69.3
 	fortio.org/log v1.17.2
 	fortio.org/progressbar v0.12.0
 	fortio.org/scli v1.16.1

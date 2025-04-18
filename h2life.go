@@ -33,7 +33,8 @@ func Main() int {
 	portFlag := flag.String("port", ":31337", "Port to listen on")
 	scli.ServerMain()
 	mux, _ := fhttp.HTTPServer("life", *portFlag)
-	mux.HandleFunc("GET /life", log.LogAndCall("life", lifeHandler))
+	mux.HandleFunc("GET /life", log.LogAndCall("life",
+		fhttp.Gzip(http.HandlerFunc(lifeHandler)).ServeHTTP))
 	scli.UntilInterrupted()
 	return 0
 }
