@@ -12,8 +12,8 @@ on:
 jobs:
     call-gochecks:
         uses: fortio/workflows/.github/workflows/gochecks.yml@main
-    call-codecov:
-        uses: fortio/workflows/.github/workflows/codecov.yml@main
+#    call-codecov:
+#        uses: fortio/workflows/.github/workflows/codecov.yml@main
     call-codeql:
         uses: fortio/workflows/.github/workflows/codeql-analysis.yml@main
     releaser-h2life:
