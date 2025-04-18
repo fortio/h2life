@@ -2,6 +2,11 @@
 
 Streams game of life over http as ANSI codes
 
+Demo:
+
+https://github.com/user-attachments/assets/8ad28d6e-169b-462f-9d9b-7ad5654e3d29
+
+
 ## Deployment
 
 Demo/deployed under:
