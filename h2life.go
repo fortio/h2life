@@ -1,6 +1,6 @@
 // Serve game of life over http (1.1 or better, 2.0 streaming).
-// need to `curl -N` to see the output as it is streamed.
-// (or fortio's h2cli -stream)
+// Use to `curl http://localhost:31337` to see the output as it is streamed.
+// (or fortio's `h2cli -stream`)
 package main
 
 import (
@@ -54,6 +54,7 @@ func lifeHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.Header().Set("Content-Type", "text/plain")
+	// chunked is implied by multiple writes/flushes and no content-length
 	w.WriteHeader(http.StatusOK)
 	ww := bufio.NewWriter(w)
 	game := &conway.Game{}
@@ -79,6 +80,9 @@ func lifeHandler(w http.ResponseWriter, r *http.Request) {
 	delay := *delayFlag
 	// fmt.Fprintln(ww, "Starting...")
 	for i := range maxIter {
+		// Add go up 1 line + \n
+		// curl needs to see a \n to flush without --no-buffer
+		_, _ = w.Write([]byte("\x1b[1A\n"))
 		flusher.Flush()
 		select {
 		case <-r.Context().Done():
