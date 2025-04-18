@@ -90,5 +90,5 @@ func lifeHandler(w http.ResponseWriter, r *http.Request) {
 			pbar.Progress(float64(100*i) / float64(maxIter))
 		}
 	}
-	w.Write([]byte("\r\n\n"))
+	_, _ = w.Write([]byte("\r\n\n"))
 }
