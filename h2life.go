@@ -9,6 +9,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 
 	"fortio.org/fortio/fhttp"
@@ -37,7 +38,15 @@ func Main() int {
 	return 0
 }
 
+func isRealBrowser(userAgent string) bool {
+	return strings.Contains(userAgent, "Mozilla")
+}
+
 func lifeHandler(w http.ResponseWriter, r *http.Request) {
+	if isRealBrowser(r.UserAgent()) {
+		http.Redirect(w, r, "https://github.com/fortio/h2life", http.StatusFound)
+		return
+	}
 	flusher, ok := w.(http.Flusher)
 	if !ok {
 		http.Error(w, "Streaming unsupported!", http.StatusInternalServerError)
