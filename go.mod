@@ -3,16 +3,17 @@ module github.com/fortio/h2life
 go 1.23.8
 
 require (
-	fortio.org/fortio v1.71.2
+	fortio.org/fortio v1.72.0
 	fortio.org/log v1.17.2
 	fortio.org/progressbar v1.1.0
-	fortio.org/scli v1.16.1
-	fortio.org/terminal v0.52.0
+	fortio.org/scli v1.17.1
+	fortio.org/terminal v0.52.2
 )
 
 require (
-	fortio.org/cli v1.10.0 // indirect
-	fortio.org/dflag v1.8.1 // indirect
+	fortio.org/cli v1.11.0 // indirect
+	fortio.org/dflag v1.9.2 // indirect
+	fortio.org/duration v1.0.4 // indirect
 	fortio.org/safecast v1.2.0 // indirect
 	fortio.org/sets v1.3.0 // indirect
 	fortio.org/struct2env v0.4.2 // indirect
