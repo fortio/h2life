@@ -5,7 +5,7 @@ go 1.24.0
 require (
 	fortio.org/fortio v1.73.0
 	fortio.org/log v1.18.1
-	fortio.org/progressbar v1.1.0
+	fortio.org/progressbar v1.2.0
 	fortio.org/scli v1.18.1
 	fortio.org/terminal v0.60.2
 )
