@@ -2,6 +2,9 @@
 
 Streams game of life over http as ANSI codes
 
+Core code and terminal version is [github.com/fortio/terminal life](https://github.com/fortio/terminal/tree/main/life) using [ansipixels](https://pkg.go.dev/fortio.org/terminal/ansipixels). This hosts the web part. 
+[fortio/fps](https://github.com/fortio/fps#fps) is another more involved showcase.
+
 Demo:
 
 https://github.com/user-attachments/assets/8ad28d6e-169b-462f-9d9b-7ad5654e3d29
