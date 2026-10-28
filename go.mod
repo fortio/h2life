@@ -5,7 +5,7 @@ go 1.26.0
 require (
 	fortio.org/fortio v1.76.0
 	fortio.org/log v1.18.3
-	fortio.org/progressbar v1.3.0
+	fortio.org/progressbar v1.5.0
 	fortio.org/scli v1.19.0
 	fortio.org/terminal v0.66.0
 )
