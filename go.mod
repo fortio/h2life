@@ -6,7 +6,7 @@ require (
 	fortio.org/fortio v1.76.0
 	fortio.org/log v1.18.3
 	fortio.org/progressbar v1.5.0
-	fortio.org/scli v1.19.0
+	fortio.org/scli v1.20.0
 	fortio.org/terminal v0.66.0
 )
 
@@ -25,6 +25,6 @@ require (
 	github.com/rivo/uniseg v0.4.7 // indirect
 	golang.org/x/crypto/x509roots/fallback v0.0.0-20250406160420-959f8f3db0fb // indirect
 	golang.org/x/image v0.47.0 // indirect
-	golang.org/x/sys v0.49.0 // indirect
+	golang.org/x/sys v0.50.0 // indirect
 	golang.org/x/term v0.47.0 // indirect
 )
